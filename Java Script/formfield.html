@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>    
+        function sayHello(){
+            uname = document.getElementById("username").value;
+            city = document.getElementById("city").value;
+            //document.write(uname+"<br>",city);
+            document.getElementById("mydiv").innerHTML="Welcome "+uname+city;
+            document.getElementById("myptag").innerHTML="Great Day "+uname;
+            myvalue = document.getElementById("TA").value;
+            document.getElementById("TADIV").innerHTML=myvalue;
+        }
+    </script>
+</head>
+<body>
+    
+    Enter Name <input type="text"  id="username"><br>
+    Enter City <input type="text" id="city"><br>
+   <input type="button" value="Click here" onclick="sayHello()">
+   <div id="mydiv" style="background-color: brown;"></div>
+    <p id="myptag" style="background-color: chartreuse;"></p>
+    Comments <textarea  id="TA" cols="30" rows="10" onkeyup="sayHello()"></textarea>
+    <div id="TADIV" style="background-color: red;"></div>
+</body>
+</html>

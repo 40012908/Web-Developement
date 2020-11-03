@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function equipment(){
+            var sel = document.getElementById("handset");
+            if(sel=='mobile')
+            {
+                document.getElementById('mydiv').innerHTML="Samsung<br>Realme<br>Moto<br>Apple";
+            }else if(sel=='PC'){
+                document.getElementById('mydiv').innerHTML="Dell<br>Mac<br>HP<br>Thinkpad";
+            }
+            else if(sel=='TV'){
+                document.getElementById('mydiv').innerHTML="Sony<br>LG<br>Onida<br>Videocon TV";
+            }
+            else{
+                document.getElementById("mydiv").innerHTML="";
+            }
+        }
+    </script>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+
+
+
+    <div style="background-color: aquamarine" id="mydiv">  </div>
+    select Equipment
+    <select name='handsets' id="handset" onclick="equipment()">
+        <option value="mobile">Mobile</option>
+        <option value="PC">PC</option>
+        <option value="TV">TV</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Selectors</title>
+    <style>
+        body:first-child{
+            letter-spacing: 5px;
+        }
+        p:first-of-type{
+            color: red;
+        }
+        div:last-child{
+            background-color:orange;
+        }
+        p:last-of-type{
+            color: green;
+        }
+        h1:last-of-type(1){
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <p> Inside p</p>  <p>last child</p> 
+    <h1 id="header" class="myclass" >Inside h1 with class</h1> 
+    <h2>Inside H2</h2> <h2 class="myclass">Inside h2</h2> 
+    <div> 
+        <h1>h1 Inside div</h1> 
+        <p>p child of div</p> 
+        <p>second child of div</p> 
+        <section> 
+            <h1>h1 Inside section</h1> 
+            <p>p child of section</p> 
+        </section> 
+        <p>last child</p>
+    </div>
+</body>
+</html>

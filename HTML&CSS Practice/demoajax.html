@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        // function show()
+        // {
+        //     name1=document.getElementById('username').value;
+        //     city1=document.getElementById('city').value;
+        //     document.getElementById('myid').innerHTML=name1+" "+city1;
+        // }
+        $(document).ready(function(){
+            $('#show').click(function(){
+            username=$('#username').val();
+            city=$('#city').val();
+            $('#myid').html('Welcome '+username+' from '+city);
+        });
+    });
+    </script>
+    <!-- <style>
+        
+     .button1{
+        background-color: burlywood;
+        width: 200px;
+        height: 20px;
+    }
+    </style>
+    <script>
+        function retrive(){
+                document.getElementById("button").innerHTML
+        }  -->
+    
+</head>
+<body>
+    <!-- <div style="text-align: justify;">
+     Name <textarea id="Name" name="Name"> </textarea><br>
+    City <textarea id="city" name="City"></textarea><br> 
+    Submit <button class ="button button1" id="button" value="Submit" onclick="retrive()"></button> -->
+    <input type="text" id="username"><br>
+    <input type="text" id="city">
+    <button id="show" onclick=show()>show</button>
+    <div id="myid"></div>
+</div>
+<div> </div>
+</body>

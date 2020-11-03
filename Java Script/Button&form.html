@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=M, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateform(){
+            if(document.getElementById("uname").value==""){
+                alert("enter your name");
+                document.myform.username.focus();
+            }else if(document.getElementById("pass").value==""){
+                alert("Enter Password");
+                document.myform.password.focus();
+            }else if(document.getElementById("ag").value==""){
+                alert('Enter Your age');
+                document.myform.age.focus();
+            }else if((document.getElementById("Male1").checked=="")&&
+                (document.getElementById("Female1").checked==""))
+                {alert('Enter Gender');
+                document.myform.gen[0].focus();
+            }
+            else{
+                alert("Registred!");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="demo1.html" name="myform">
+    Enter name
+    <input type ="text" name = "username" id= "uname" placeholder="Enter name"/><br/>
+ 
+    Enter age
+    <input type ="number" name = "age" id= "ag" placeholder="Enter age"/><br/>
+ 
+    Enter password 
+    <input type= "password" name= "password" id="pass" placeholder="Enter password"/><br/>
+ 
+    Gender
+    <input type="radio" name="gen" id="Male1" value="M">Male
+    <input type="radio" name="gen" id="Female1" value="F">Female <br/>
+ 
+    <input type="button" value="submit" onclick="validateform()">
+
+    </form>
+</body>
+</html>
