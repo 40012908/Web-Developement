@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoist</title>
+    <script>
+        //  function(){} is called anonymous function
+        // you can assign this function to a variable also.
+        /*
+        function greetuser(){
+            document.write('Hello');
+        }
+        
+        function greetuser(username){
+            document.write('Welcome'+username)
+        }
+        greetuser();
+        greetuser();
+
+        
+        greet();
+        function greet()
+        {
+            document.write('Hello');
+        }
+
+
+        //Below can not be called because it is function variable initialization.
+        //check();
+        var check=function(){
+            document.write(' Welcome');
+        }
+        check();
+        //No concept of function overloading in java, when executing new function with same 
+        //name, it overrides old function.
+        */
+       setTimeout(function(){
+           console.log('Timeout completed')
+       },2000)
+
+       setInterval(function(){
+           console.log('Ping Server ...')
+       }, 2000)
+
+        /*
+       var arr=[10,20,30,40,50,53,65];
+       for(let i=0;i<arr.length;i++){
+           document.write(arr[i]+" ");
+       }
+
+       document.write("Using ForIn<br/>");
+        for(const i in arr)
+        {
+            document.write(arr[i]+"<br/>");
+        }
+       document.write("using for of <br/>");
+       for(const ele of arr){
+           document.write(ele+"<br/>");
+       }
+       document.write("Using forEach <br/>");
+       arr.forEach(function(value,index,arr){
+           document.write(value+"<br/>");
+       })
+
+       document.write('Using FoeEach<br/>');
+       arr.forEach(function (element,index,arr){
+           document.write(arr[index]+"<br>");
+       });
+       arr.forEach((ele)=>{
+           document.write(elem+"<br/>");
+       });
+       */
+      var check = (name)=>{document.write('Great Day '+name)}
+       check('Priya');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

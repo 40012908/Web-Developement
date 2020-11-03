@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var usernames=['x','y','z','a','b','c'];
+        var usernames1 = prompt('Enter Name');
+        var i = usernames.length;
+        var temp=0;
+        for(i=0;i<usernames.length;i++)
+        {
+            if(usernames1!=usernames[i])
+            { temp=1; }
+            else{
+                temp=0;
+                break; }
+        }
+        
+        if(temp==0) { alert("Successfully logged in!"); }
+        else{alert('Please enter valid user name!');}
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
